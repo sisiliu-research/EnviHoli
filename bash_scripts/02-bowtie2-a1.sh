@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #===========================================================================
-# Alignment against taxonomic reference database 1 on several sample using arrays
+# Alignment against taxonomic reference database package 1 on several sample using arrays
 # Version 0.4
 #
 # by Sisi Liu
