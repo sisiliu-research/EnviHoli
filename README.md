@@ -13,11 +13,11 @@ This repository contains 10 bash scripts located in the `bash_scripts` directory
 02-bowtie2-a1.sh  
 03-bowtie2-a2.sh  
 04-bowtie2-a3.sh  
-05-merge-split-Siberian.sh  
+05-merge-sort.sh  
 06-metaDMG.sh  
 07-post-metadmg-lca.sh  
-08-combine_lca_il.sh  
-09-mismatch-ili.sh  
+08-combine_lca.sh  
+09-mismatch.sh  
 10-combine_dmgout.sh  
 
 ### External Scripts
@@ -80,7 +80,7 @@ Instructions on how to use the dependencies.
 ### III. Merge and sort alignments
 Motivation: To make sure alignments have been sorted by readID; sort the sam file instead of bam file due to size of headers of merged bam file > 2GB.
 1. Input all alignments:${FILEBASE}.$(basename $DB).bam
-2. Script for merge and sort: bash_scripts/05-merge-split-Siberian.sh
+2. Script for merge and sort: bash_scripts/05-merge-sort.sh
 3. Outoup for next step (taxonomic classification and ancient damage pattern analysis):${FILEBASE}_L30.sorted.sam.gz
 
 ### IV. Taxonomic classification and ancient damage pattern analysis
@@ -92,8 +92,8 @@ Ancient pattern: [Michelsen et al., 2022](https://www.biorxiv.org/content/10.110
 
 ### V. Post-processing of MetaDMG
 1. Attach full lineage and key ranks based on tax_id: bash_scripts/07-post-metadmg-lca.sh and external_scripts/post-metadmg-lca.R
-2. Combine taxonomic classification results: bash_scripts/08-combine_lca_il.sh and external_scripts/combine_lca.R
-3. Calculate ATCG substitutions frequency and attach lineage information: bash_scripts/09-mismatch-ili.sh and external_scripts/mismatch.R
+2. Combine taxonomic classification results: bash_scripts/08-combine_lca.sh and external_scripts/combine_lca.R
+3. Calculate ATCG substitutions frequency and attach lineage information: bash_scripts/09-mismatch.sh and external_scripts/mismatch.R
 4. Combine C>T rate of metaDMGout.csv and attach lineage information: bash_scripts/10-combine_dmgout.sh and external_scripts/combine_dmgout.R
 
 
