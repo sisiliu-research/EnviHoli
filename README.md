@@ -21,12 +21,13 @@ This repository contains 10 bash scripts located in the `bash_scripts` directory
 10-combine_dmgout.sh  
 
 ### External Scripts
-In addition, there are 5 external scripts in the `external_scripts` directory, which are written in various languages (Python and R) and are not part of the bash scripts.
-combine_dmgout.R  
-combine_lca.R  
-dedup_sam.py  
-mismatch.R  
-post-metadmg-lca.R  
+In addition, there are 5 external scripts in the `external_scripts` directory, which are written in various languages (Python and R) and are not part of the bash scripts.  
+
+1. combine_dmgout.R  
+2. combine_lca.R  
+3. dedup_sam.py  
+4. mismatch.R  
+5. post-metadmg-lca.R  
 
 ### Files
 In addition, there are 2 txt files in the `external_files` directory, which are descriptions of sources of raw shotgun sequencing data and taxonomic reference data
@@ -78,14 +79,14 @@ Instructions on how to use the dependencies.
 
 ### III. Merge and sort alignments
 Motivation: To make sure alignments have been sorted by readID; sort the sam file instead of bam file due to size of headers of merged bam file > 2GB.
-1. Input all alignments: ${FILEBASE}.$(basename $DB).bam
+1. Input all alignments:${FILEBASE}.$(basename $DB).bam
 2. Script for merge and sort: bash_scripts/05-merge-split-Siberian.sh
-3. Outoup for next step (taxonomic classification and ancient damage pattern analysis): ${FILEBASE}_L30.sorted.sam.gz
+3. Outoup for next step (taxonomic classification and ancient damage pattern analysis):${FILEBASE}_L30.sorted.sam.gz
 
 ### IV. Taxonomic classification and ancient damage pattern analysis
 Taxonomic profile: [Wang et al., 2022](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14006); 
 Ancient pattern: [Michelsen et al., 2022](https://www.biorxiv.org/content/10.1101/2022.12.06.519264v1)
-1. Input sorted alignments: ${FILEBASE}_L30.sorted.sam.gz
+1. Input sorted alignments:${FILEBASE}_L30.sorted.sam.gz
 2. Script: bash_scripts/06-metaDMG.sh
 3. Output structure: see [Michelsen et al., 2022](https://www.biorxiv.org/content/10.1101/2022.12.06.519264v1)
 
