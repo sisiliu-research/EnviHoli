@@ -24,5 +24,10 @@ Coelodonta antiquitatis,TaxID: 222863,https://doi.org/10.1016/j.cell.2021.07.032
 # PhyloNorway arctic and boreal plant database
 https://dataverse.no/dataset.xhtml;jsessionid=dfe334bbadc5fb9c5eab4332d568?persistentId=doi:10.18710/3CVQAG&version=DRAFT
 
+# Abies_sibirica and Pinus_pumila
+NC_035067.1, https://www.ncbi.nlm.nih.gov/search/all/?term=NC_035067.1
+NC_041108.1, https://www.ncbi.nlm.nih.gov/search/all/?term=NC_041108.1
+Citation: https://onlinelibrary.wiley.com/doi/10.1002/ece3.7183
+
 # Selected genomes
 external_files/taxonomic_referece_selected.xlsx
