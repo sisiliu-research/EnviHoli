@@ -30,7 +30,7 @@ In addition, there are 5 external scripts in the `external_scripts` directory, w
 5. post-metadmg-lca.R  
 
 ### Files
-In addition, there are 2 txt files in the `external_files` directory, which are descriptions of sources of raw shotgun sequencing data and taxonomic reference data
+In addition, there are 10 files in the `external_files` directory, which are descriptions of sources of raw shotgun sequencing data (raw_shotgun_data_sources.txt), taxonomic reference data (taxonomic_reference_database.xlsx), and age-depth models of 8 lake cores (e.g., Age-depth_*_shotgun.csv)
 
 # Detailed Description
 This section provides an in-depth look at the data analysis's features and functionality.
