@@ -1,6 +1,6 @@
 # EnviHoli
 Code repository for sedimentary ancient DNA (sedaDNA) shotgun sequencing (metagenomics) data analysis.  
-Contributed by: [Sisi Liu](mailto:sisi.liu@awi.de)[Sisi Liu](mailto:sisi.liu.research@gmail.com), [Lars Harms](mailto:lars.harms@awi.de), [Christiane Böckel](mailto:christiane.boeckel@awi.de)
+Contributed by: [Sisi Liu](mailto:sisi.liu@awi.de)[Sisi Liu](mailto:sisi.liu.research@gmail.com), [Lars Harms](mailto:lars.harms@awi.de), [Christiane Böckel](mailto:christiane.boeckel@awi.de), [Kathleen R. Stoof-Leichsenring](Kathleen.Stoof-Leichsenring@awi.de)
 
 # General content
 ## Scripts and Files in This Repository
