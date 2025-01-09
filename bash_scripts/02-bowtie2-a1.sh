@@ -176,6 +176,14 @@ for DB in ${DBP}/vert_mam01/vert_mam.?; do\
 done
 
 # whih DB?
+for DB in ${DBP}/vert_mam01/vert_mam.??; do\
+	echo Mapping ${OUT_MERGED} against $DB
+	srun bowtie2 --threads ${CPU} -k 1000 -x $DB -U ${INDIR}/${OUT_MERGED} --no-unal -S ${OUTDIR}/${OUT_ALIGN}/${FILEBASE}/${FILEBASE}.$(basename $DB).sam
+	srun samtools view -bS ${SAMF}/${FILEBASE}.$(basename $DB).sam > ${SAMF}/${FILEBASE}.$(basename $DB).bam
+	rm ${SAMF}/${FILEBASE}.$(basename $DB).sam
+done
+
+# whih DB?
 for DB in ${DBP}/vert_mam02/vert_mam.??; do\
 	echo Mapping ${OUT_MERGED} against $DB
 	srun bowtie2 --threads ${CPU} -k 1000 -x $DB -U ${INDIR}/${OUT_MERGED} --no-unal -S ${SAMF}/${FILEBASE}.$(basename $DB).sam
