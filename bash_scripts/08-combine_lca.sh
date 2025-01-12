@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #===========================================================================
-# Combine C>T rate of metaDMG taxlineage csv
+# Combine lca taxlineage
 # on several sample using arrays
 # Version 0.4 
 #
