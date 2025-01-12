@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
 #==== what? ====
-# 1. combine all _metaDMGout.csv_taxlineage.csv
+# 1. combine all .lca.taxlineage.tsv
 # save to RData
 
 #==== load packages ====
