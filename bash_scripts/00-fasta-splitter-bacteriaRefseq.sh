@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#=====
+# slurm to split bacteria refseq into 40 parts by considering computational capacity of HPC
+# "how many parts", denpending on file size of *.fa and HPC 
+#=====
+
 #SBATCH --account=
 #SBATCH --job-name=b0in
 #SBATCH --partition=fat
