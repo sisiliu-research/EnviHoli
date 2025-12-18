@@ -1,8 +1,14 @@
 #!/bin/bash
 
 #=====
-# slurm to split bacteria refseq into 40 parts by considering computational capacity of HPC
+# slurm to split refseq into 40 parts by considering computational capacity of HPC
 # "how many parts", denpending on file size of *.fa and HPC 
+# Taking bacteria refseq as an example
+#
+# by Sisi Liu
+# 
+# contact: sisi.liu@awi.de
+#
 #=====
 
 #SBATCH --account=
