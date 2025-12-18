@@ -89,6 +89,7 @@ Ancient pattern: [Michelsen et al., 2022](https://www.biorxiv.org/content/10.110
 1. Input sorted alignments:${FILEBASE}_L30.sorted.sam.gz
 2. Script: bash_scripts/06-metaDMG.sh
 3. Output structure: see [Michelsen et al., 2022](https://www.biorxiv.org/content/10.1101/2022.12.06.519264v1)
+4. Taxonomic reference dump files used for classification are archived on Zenodo: 10.5281/zenodo.17974857
 
 ### V. Post-processing of MetaDMG
 1. Attach full lineage and key ranks based on tax_id: bash_scripts/07-post-metadmg-lca.sh and external_scripts/post-metadmg-lca.R
