@@ -3,7 +3,9 @@
 #========
 # slurm to build taxonomic reference database
 # taking /bac00 as an example, including /bac00/bac.{1..9}
-
+# by Sisi Liu
+# 
+# contact: sisi.liu@awi.de
 #========
 
 #SBATCH --account=
