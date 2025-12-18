@@ -27,18 +27,20 @@
 
 # set required variables (adapt according to your own requirements)
 #===================================================================
-
+WORK="/path/to/working/directory"
+OUTDIR="/path/to/output/dir"
 INDIR="/path/to/rawdata"
 R1_ENDING=".R1.fastq.gz"
 R2_ENDING=".R2.fastq.gz"
 CLUMPIFY="TRUE"
 DEDUPE="TRUE"
-#FILTER="--low_complexity_filter"
+
+FASTQC="fastqc/0.11.9"
+BBTOOLS="bbmap/39.01"
+FASTP="fastp/0.23.2"
 
 # given variables (please do not change)
 #===================================================================
-WORK="/path/to/working/directory"
-OUTDIR="/path/to/output/dir"
 OUT_FQC="out.fastqc"
 PRE="pre"
 POST="post"
@@ -46,9 +48,6 @@ OUT_CLUMPIFY="out.clumpify"
 OUT_FASTP="out.fastp"
 OUT_DEDUPE="out.dedupe"
 
-FASTQC="fastqc/0.11.9"
-BBTOOLS="bbmap/39.01"
-FASTP="fastp/0.23.2"
 CPU=${SLURM_CPUS_PER_TASK}
 MEM=100
 # prepare environment
