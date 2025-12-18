@@ -5,7 +5,7 @@ https://www.ebi.ac.uk/ena/browser/view/PRJEB74036
 https://www.ebi.ac.uk/ena/browser/view/PRJEB82625
 
 # Lake Levinson Lessing
-https://www.ebi.ac.uk/ena/browser/view/PRJEB82351
+https://www.ebi.ac.uk/ena/browser/view/PRJEB94536
 
 # Lake Lama
 https://www.ebi.ac.uk/ena/browser/view/PRJEB80877
@@ -20,4 +20,4 @@ https://www.ebi.ac.uk/ena/browser/view/PRJEB80642
 https://www.ebi.ac.uk/ena/browser/view/PRJEB82635
 
 # Lake Salmon
-https://www.ebi.ac.uk/ena/browser/view/PRJEB82624
+https://www.ebi.ac.uk/ena/browser/view/PRJEB82717
