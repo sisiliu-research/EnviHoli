@@ -72,7 +72,7 @@ Instructions on how to use the dependencies.
 ### II. Taxonomic reference database establishment and end-to-end alignment in Bowtie2
 
 1. Source data for taxonomic reference database establishment: external_files/taxonomic_reference_sources.txt
-2. Script for taxonomic reference database establishment: bash_scripts/00-bowtie2-build-bac0.sh (bowtie2-build for Bacteria refseq database establishmen. Other database using the same script with different path-to-db and splited size)
+2. Script for taxonomic reference database establishment: bash_scripts/00_0-fasta-splitter-bacteriaRefseq.sh and 00_1-bowtie2-build-bac0.sh (bowtie2-build for Bacteria refseq database establishmen. Other database using the same script with different path-to-db and splited size)
 3. Input merged shotgun sequencing data: *fastp_dedupe_merged.fq.gz
 4. Script for alignment against taxonomic reference database: bash_scripts/02-bowtie2-a1.sh, bash_scripts/03-bowtie2-a2.sh, bash_scripts/04-bowtie2-a3.sh
 5. Output for next step (merge and sort alignments): ${FILEBASE}.$(basename $DB).bam (${FILEBASE} is fastq file id; $(basename $DB) is taxonomic reference database name. In total, there are 147 alignment bam files per seqencing file.)
