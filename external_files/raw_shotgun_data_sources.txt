@@ -1,9 +1,3 @@
-# Lake Naleng
-https://www.ebi.ac.uk/ena/browser/view/PRJEB74036
-
-# Lake Ximen
-https://www.ebi.ac.uk/ena/browser/view/PRJEB82625
-
 # Lake Levinson Lessing
 https://www.ebi.ac.uk/ena/browser/view/PRJEB94536
 
